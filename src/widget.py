@@ -1,4 +1,5 @@
 from src.masks import masked_card_num, masked_account_num
+from datetime import datetime
 
 
 def mask_elements(element: str) -> str:
@@ -20,5 +21,9 @@ def mask_elements(element: str) -> str:
                 #return mask
 
 
-print(mask_elements("Счет 73654108430135874305"))
-print(mask_elements("Visa Platinum 7000792289606361"))
+def get_date(date: str) -> str:
+    day, month, year = date[8:10], date[5:7], date[:4]
+    return f'{day}.{month}.{year}'git
+
+
+
