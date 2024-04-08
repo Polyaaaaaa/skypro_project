@@ -23,7 +23,7 @@ def mask_elements(element: str) -> str:
 
 def get_date(date: str) -> str:
     day, month, year = date[8:10], date[5:7], date[:4]
-    return f'{day}.{month}.{year}'git
+    return f'{day}.{month}.{year}'
 
-
+print
 
