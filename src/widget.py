@@ -10,7 +10,7 @@ def mask_elements(element: str) -> str | None:
                 continue
             elif element[i].isdigit():
                 mask = masked_account_num(element[i:])
-                return f"Счёт {mask}"
+                return f"Счет {mask}"
 
     else:
         for i in range(len(element)):
