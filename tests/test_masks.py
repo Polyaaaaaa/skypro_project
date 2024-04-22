@@ -8,5 +8,3 @@ def test_masked_card_num():
 
 def test_masked_account_num():
     assert "**4305" == "**4305"
-
-
