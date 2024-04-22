@@ -90,3 +90,13 @@ usd_transactions = filter_by_currency(transactions, "USD")
 for _ in range(2):
     print(next(usd_transactions)["id"])
 
+
+def descriptions_generator(element):
+    for i in element:
+        yield i["description"]
+
+
+descriptions = descriptions_generator(transactions)
+
+for _ in range(5):
+    print(next(descriptions))
