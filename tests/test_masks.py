@@ -5,6 +5,7 @@ from src.masks import masked_account_num, masked_card_num
 
 @pytest.fixture
 def coll() -> list:  # имя фикстуры любое
+    """функция, возвращающая входные данные для тестов"""
     return [
         {"id": 41428829, "state": "EXECUTED", "date": "2019-07-03T18:35:29.512364"},
         {"id": 939719570, "state": "EXECUTED", "date": "2018-06-30T02:08:58.425572"},

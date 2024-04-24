@@ -50,6 +50,8 @@ transactions = [
 
 
 def filter_by_currency(element: list, currency: str) -> Iterator:
+    """функция, которая принимает список словарей (или объект, который выдает по одной словари с транзакциями),
+     и возвращает итератор, который выдает по очереди операции, в которых указана заданная валюта"""
     for i in element:
         if i["operationAmount"]["currency"]["code"] == currency:
             yield i
@@ -62,6 +64,7 @@ for _ in range(2):
 
 
 def descriptions_generator(element: list) -> Iterator:
+    """генератор, который принимает список словарей и возвращает описание каждой операции по очереди"""
     for i in element:
         yield i["description"]
 
@@ -73,6 +76,7 @@ for _ in range(5):
 
 
 def card_number_generator(start: int, end: int) -> Iterator:
+    """генератор номеров банковских карт, который должен генерировать номера карт"""
     numbers = "0000 0000 0000 0000"
     for i in range(start, end + 1):
         yield numbers[:-1] + str(i)
