@@ -1,6 +1,6 @@
 import pytest
 
-from src.generators import filter_by_currency, descriptions_generator, card_number_generator
+from src.generators import card_number_generator, descriptions_generator, filter_by_currency
 
 
 @pytest.fixture
@@ -53,6 +53,7 @@ def coll_2() -> list:
             "to": "Счет 14211924144426031657",
         },
     ]
+
 
 coll_3 = [
     {
