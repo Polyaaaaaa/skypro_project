@@ -87,17 +87,17 @@ coll_4 = [
 
 def test_filter_by_currency(coll_2: list) -> None:
     function_1 = filter_by_currency(coll_2, "USD")
-    for i in coll_3:
-        assert next(function_1) == i
+    for element in coll_3:
+        assert next(function_1) == element
 
 
 def test_descriptions_generator(coll_2: list) -> None:
     function_2 = descriptions_generator(coll_2)
-    for i in coll_2:
-        assert next(function_2) == i["description"]
+    for element in coll_2:
+        assert next(function_2) == element["description"]
 
 
 def test_card_number_generator() -> None:
     function_3 = card_number_generator(1, 5)
-    for i in coll_4:
-        assert next(function_3) == i
+    for element in coll_4:
+        assert next(function_3) == element
