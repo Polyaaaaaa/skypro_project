@@ -49,12 +49,12 @@ transactions = [
 ]
 
 
-def filter_by_currency(element: list, currency: str) -> Iterator:
+def filter_by_currency(elements: list, currency: str) -> Iterator:
     """функция, которая принимает список словарей (или объект, который выдает по одной словари с транзакциями),
     и возвращает итератор, который выдает по очереди операции, в которых указана заданная валюта"""
-    for i in element:
-        if i["operationAmount"]["currency"]["code"] == currency:
-            yield i
+    for element in elements:
+        if element["operationAmount"]["currency"]["code"] == currency:
+            yield element
 
 
 usd_transactions = filter_by_currency(transactions, "USD")
@@ -63,10 +63,10 @@ for _ in range(2):
     print(next(usd_transactions)["id"])
 
 
-def descriptions_generator(element: list) -> Iterator:
+def descriptions_generator(elements: list) -> Iterator:
     """генератор, который принимает список словарей и возвращает описание каждой операции по очереди"""
-    for i in element:
-        yield i["description"]
+    for element in elements:
+        yield element["description"]
 
 
 descriptions = descriptions_generator(transactions)
