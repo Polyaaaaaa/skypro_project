@@ -9,4 +9,5 @@ def test_decorator() -> None:
 
 @log(filename="mylog.txt")
 def my_function(x: int, y: int) -> int:
+    "функция, благодаря которой будет работать декоратор"
     return x + y
