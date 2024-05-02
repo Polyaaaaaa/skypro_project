@@ -1,26 +1,14 @@
 import pytest
 
-from src.decorators import log, my_function
+from src.decorators import log
 
-from datetime import datetime
+
+def test_decorator():
+    my_function(1, 2)
+    with open("mylog.txt", "r", encoding="utf-8") as file:
+        assert len(file.readlines()) > 0
 
 
 @log(filename="mylog.txt")
-def test_my_func_with_file_1time(my_function):
-    assert my_function() == True
-
-
-@log(filename="mylog.txt")
-def test_my_func_with_file_2time():
-    pass
-
-
-@log()
-def test_my_func_without_file_1time():
-    pass
-
-
-@log
-def test_my_func_without_file_2time():
-    pass
-
+def my_function(x: int, y: int) -> int:
+    return x + y

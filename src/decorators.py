@@ -28,11 +28,3 @@ def log(filename: str | None = None) -> Callable:
         return inner
 
     return wrapper
-
-
-@log()
-def my_function(x: int, y: int) -> int:
-    return x + y
-
-
-my_function(1, 2)
