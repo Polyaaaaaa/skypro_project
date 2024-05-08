@@ -5,6 +5,7 @@ from typing import Any, Callable
 
 def log(filename: str | None = None) -> Callable:
     """декоратор, который будет логировать вызов функции и ее результат в файл или в консоль"""
+
     def wrapper(func: Callable) -> Callable:
         @wraps(func)
         def inner(*args: Any, **kwargs: Any) -> None:
