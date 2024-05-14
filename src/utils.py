@@ -1,6 +1,5 @@
 import json
 from typing import Any
-
 import requests
 
 API_KEY = "Y0NJSYiThQhh4r2ykGqyoeHJ8OISMbYU"
