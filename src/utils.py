@@ -2,8 +2,6 @@ import json
 from typing import Any
 import requests
 
-API_KEY = "Y0NJSYiThQhh4r2ykGqyoeHJ8OISMbYU"
-
 
 def get_list_of_transactions(filepath: str) -> Any:
     """
