@@ -1,8 +1,7 @@
 from unittest.mock import Mock
 
-import pytest
 
-from src.utils import get_list_of_transactions, get_sum_transactions
+from src.utils import get_list_of_transactions
 
 
 def test_get_list_of_transactions() -> None:

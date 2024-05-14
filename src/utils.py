@@ -1,11 +1,16 @@
 import json
 from typing import Any
+
 import requests
 
 API_KEY = "Y0NJSYiThQhh4r2ykGqyoeHJ8OISMbYU"
 
 
 def get_list_of_transactions(filepath: str) -> Any:
+    """
+    функция, которая принимает на вход путь до JSON-файла
+    и возвращает список словарей с данными о финансовых транзакциях
+    """
     try:
         with open(filepath, "r", encoding="utf-8") as file:
             dicts_in_list = json.load(file)
@@ -23,6 +28,10 @@ def get_list_of_transactions(filepath: str) -> Any:
 
 
 def get_sum_transactions(transaction: dict) -> float:
+    """
+    функция, которая принимает на вход транзакцию
+    и возвращает сумму транзакции (amount) в рублях, возвращает тип float
+    """
     summ = 0
     amnt = transaction["operationAmount"]["amount"]
     currency = transaction["operationAmount"]["currency"]["code"]
