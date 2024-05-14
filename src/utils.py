@@ -1,6 +1,7 @@
 import json
 from typing import Any
 import requests
+from .env import API_KEY
 
 
 def get_list_of_transactions(filepath: str) -> Any:
