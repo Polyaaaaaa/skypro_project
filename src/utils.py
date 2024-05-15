@@ -1,7 +1,7 @@
 import json
 from typing import Any
 import requests
-from .env import API_KEY
+import os
 
 
 def get_list_of_transactions(filepath: str) -> Any:
@@ -38,7 +38,8 @@ def get_sum_transactions(transaction: dict) -> float:
 
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={'RUB'}&from={currency}&amount={amnt}"
 
-        headers = {"apikey": API_KEY}
+        api_key = os.getenv('API_KEY')
+        headers = {"apikey": api_key}
         payload: dict = {}
         response = requests.request("GET", url, headers=headers, data=payload)
         result = response.json().get("result")
@@ -46,18 +47,3 @@ def get_sum_transactions(transaction: dict) -> float:
     else:
         summ += amnt
     return summ
-
-
-print(
-    get_sum_transactions(
-        {
-            "id": 441945886,
-            "state": "EXECUTED",
-            "date": "2019-08-26T10:50:58.294041",
-            "operationAmount": {"amount": "3.58", "currency": {"name": "руб.", "code": "EUR"}},
-            "description": "Перевод организации",
-            "from": "Maestro 1596837868705199",
-            "to": "Счет 64686473678894779589",
-        }
-    )
-)
