@@ -31,7 +31,7 @@ def get_sum_transactions(transaction: dict) -> float:
     функция, которая принимает на вход транзакцию
     и возвращает сумму транзакции (amount) в рублях, возвращает тип float
     """
-    summ = 0
+    summ = 0.0
     amnt = transaction["operationAmount"]["amount"]
     currency = transaction["operationAmount"]["currency"]["code"]
 
@@ -39,7 +39,7 @@ def get_sum_transactions(transaction: dict) -> float:
 
         url = f"https://api.apilayer.com/exchangerates_data/convert?to={'RUB'}&from={currency}&amount={amnt}"
         load_dotenv()
-        api_key = os.getenv('API_KEY')
+        api_key = os.getenv("API_KEY")
         headers = {"apikey": api_key}
         payload: dict = {}
         response = requests.request("GET", url, headers=headers, data=payload)
@@ -50,13 +50,13 @@ def get_sum_transactions(transaction: dict) -> float:
     return summ
 
 
-print(get_sum_transactions({
-    "id": 441945886,
-    "state": "EXECUTED",
-    "date": "2019-08-26T10:50:58.294041",
-    "operationAmount": {
-        "amount": "31957.58",
-        "currency": {
-            "name": "руб.",
-            "code": "RUB"
-        }}}))
+print(
+    get_sum_transactions(
+        {
+            "id": 441945886,
+            "state": "EXECUTED",
+            "date": "2019-08-26T10:50:58.294041",
+            "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": "RUB"}},
+        }
+    )
+)
