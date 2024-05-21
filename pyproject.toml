@@ -11,6 +11,7 @@ requests = "^2.31.0"
 python-dotenv = "^1.0.1"
 stubs = "^1.0.0"
 types-requests = "^2.31.0.20240406"
+logging = "^0.4.9.6"
 
 
 [tool.poetry.group.lint.dependencies]

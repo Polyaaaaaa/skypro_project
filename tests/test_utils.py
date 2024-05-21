@@ -1,8 +1,8 @@
 import json
-from unittest.mock import patch
-from src.utils import get_list_of_transactions
 import os
-from unittest.mock import Mock
+from unittest.mock import Mock, patch
+
+from src.utils import get_list_of_transactions
 
 
 @patch("builtins.open", create=True)
