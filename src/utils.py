@@ -1,11 +1,10 @@
 import json
+import logging
 import os
 from typing import Any
 
 import requests
 from dotenv import load_dotenv
-
-import logging
 
 logger = logging.getLogger("utils")
 file_handler = logging.FileHandler("loggers_info.txt")
@@ -25,24 +24,24 @@ def get_list_of_transactions(filepath: str) -> Any:
         with open(filepath, "r", encoding="utf-8") as file:
             dicts_in_list = json.load(file)
     except json.decoder.JSONDecodeError:
-        result_1 =  []
+        result_1: Any = []
         logger.info(f"the resulting list {result_1}")
         return result_1
     except FileNotFoundError:
-        result_2 = []
+        result_2: Any = []
         logger.info(f"the resulting list {result_2}")
         return result_2
     else:
         if len(dicts_in_list) > 0:
-            result_3 = dicts_in_list
+            result_3: Any = dicts_in_list
             logger.info(f"the resulting list {result_3}")
             return result_3
         elif not isinstance(dicts_in_list, list):
-            result_4 = []
+            result_4: Any = []
             logger.info(f"the resulting list {result_4}")
             return result_4
 
-    result_5 = []
+    result_5: Any = []
     logger.info(f"the resulting list {result_5}")
     return result_5
 
@@ -71,7 +70,7 @@ def get_sum_transactions(transaction: dict) -> float:
         summ += float(amnt)
     result = summ
     logger.info(f"sum {result}")
-    return result
+    return float(result)
 
 
 print(
