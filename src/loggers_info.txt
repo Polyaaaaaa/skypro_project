@@ -1,3 +1,4 @@
-2024-05-21 17:32:25,164 Loggers.py WARNING: Warning message
-2024-05-21 17:32:25,164 Loggers.py ERROR: Error message
-2024-05-21 17:32:25,164 Loggers.py CRITICAL: Critical message
+2024-05-22 10:10:51,244 masks.py INFO: start masked_card_num 1234567812341234
+2024-05-22 10:10:51,244 masks.py INFO: mask 1234 56** **** 1234
+2024-05-22 10:10:51,244 masks.py INFO: start masked_account_num 340985309458340
+2024-05-22 10:10:51,244 masks.py INFO: mask **8340

@@ -18,8 +18,7 @@ file_formatter = logging.Formatter("%(asctime)s %(filename)s %(levelname)s: %(me
 file_handler.setFormatter(file_formatter)
 logger.addHandler(file_handler)
 
-logger.info('Info message')
-logger.warning('Warning message')
-logger.error('Error message')
-logger.critical('Critical message')
-
+logger.info("Info message")
+logger.warning("Warning message")
+logger.error("Error message")
+logger.critical("Critical message")
