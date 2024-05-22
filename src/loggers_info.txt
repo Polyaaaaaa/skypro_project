@@ -2,3 +2,5 @@
 2024-05-22 10:10:51,244 masks.py INFO: mask 1234 56** **** 1234
 2024-05-22 10:10:51,244 masks.py INFO: start masked_account_num 340985309458340
 2024-05-22 10:10:51,244 masks.py INFO: mask **8340
+2024-05-22 10:23:41,361 utils.py INFO: start get_sum_transactions {'id': 441945886, 'state': 'EXECUTED', 'date': '2019-08-26T10:50:58.294041', 'operationAmount': {'amount': '31957.58', 'currency': {'name': 'руб.', 'code': 'RUB'}}}
+2024-05-22 10:23:41,361 utils.py INFO: sum 31957.58
