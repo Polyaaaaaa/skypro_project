@@ -5,6 +5,7 @@ from typing import Any
 
 import requests
 from dotenv import load_dotenv
+import pandas as pd
 
 logger = logging.getLogger("utils")
 file_handler = logging.FileHandler("loggers_info.txt")
@@ -73,13 +74,13 @@ def get_sum_transactions(transaction: dict) -> float:
     return float(result)
 
 
-print(
-    get_sum_transactions(
-        {
-            "id": 441945886,
-            "state": "EXECUTED",
-            "date": "2019-08-26T10:50:58.294041",
-            "operationAmount": {"amount": "31957.58", "currency": {"name": "руб.", "code": "RUB"}},
-        }
-    )
-)
+def get_xlsx_file_as_DataFrame(filepath: str) -> Any:
+    reviews = pd.read_excel(filepath)
+    filepath_dict = reviews.to_dict()
+    return filepath_dict
+
+
+def get_csv_file_as_DataFrame(filepath: str) -> Any:
+    reviews = pd.read_csv(filepath)
+    filepath_dict = reviews.to_dict()
+    return filepath_dict
