@@ -20,13 +20,13 @@ def test_get_sum_transactions() -> None:
     assert mock_random() == 351.383168
 
 
-@patch('pandas.read_excel')
-def test_get_xlsx_file_as_DataFrame(mock_read_excel):
+@patch("pandas.read_excel")
+def test_get_xlsx_file_as_DataFrame(mock_read_excel) -> None:
     mock_read_excel.return_value = DataFrame({"key": ["value"]})
-    assert get_xlsx_file_as_DataFrame('test.xlsx') == {'key': {0: 'value'}}
+    assert get_xlsx_file_as_DataFrame("test.xlsx") == {"key": {0: "value"}}
 
 
-@patch('pandas.read_csv')
-def test_get_csv_file_as_DataFrame(mock_read_excel):
+@patch("pandas.read_csv")
+def test_get_csv_file_as_DataFrame(mock_read_excel) -> None:
     mock_read_excel.return_value = DataFrame({"key": ["value"]})
-    assert get_csv_file_as_DataFrame('test.csv') == {'key': {0: 'value'}}
+    assert get_csv_file_as_DataFrame("test.csv") == {"key": {0: "value"}}
