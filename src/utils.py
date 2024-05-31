@@ -74,13 +74,13 @@ def get_sum_transactions(transaction: dict) -> float:
     return float(result)
 
 
-def get_xlsx_file_as_DataFrame(filepath: str) -> Any:
+def get_xlsx_file_as_DataFrame(filepath: str) -> dict:
     reviews = pd.read_excel(filepath)
     filepath_dict = reviews.to_dict()
     return filepath_dict
 
 
-def get_csv_file_as_DataFrame(filepath: str) -> Any:
-    reviews = pd.read_csv(filepath)
+def get_csv_file_as_DataFrame(filepath: str) -> dict:
+    reviews = pd.read_csv(filepath, sep=";")
     filepath_dict = reviews.to_dict()
     return filepath_dict

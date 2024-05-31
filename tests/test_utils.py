@@ -2,7 +2,9 @@ import json
 import os
 from unittest.mock import Mock, patch
 
-from src.utils import get_list_of_transactions
+from pandas import DataFrame
+
+from src.utils import get_list_of_transactions, get_xlsx_file_as_DataFrame, get_csv_file_as_DataFrame
 
 
 @patch("builtins.open", create=True)
@@ -16,3 +18,15 @@ def test_get_list_of_transactions(mock_open: Mock) -> None:
 def test_get_sum_transactions() -> None:
     mock_random = Mock(return_value=351.383168)
     assert mock_random() == 351.383168
+
+
+@patch('pandas.read_excel')
+def test_get_xlsx_file_as_DataFrame(mock_read_excel):
+    mock_read_excel.return_value = DataFrame({"key": ["value"]})
+    assert get_xlsx_file_as_DataFrame('test.xlsx') == {'key': {0: 'value'}}
+
+
+@patch('pandas.read_csv')
+def test_get_csv_file_as_DataFrame(mock_read_excel):
+    mock_read_excel.return_value = DataFrame({"key": ["value"]})
+    assert get_csv_file_as_DataFrame('test.csv') == {'key': {0: 'value'}}
