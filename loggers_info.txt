@@ -1,0 +1,20 @@
+2024-05-31 16:58:59,093 masks.py INFO: start masked_card_num 7000799978996361
+2024-05-31 16:58:59,093 masks.py INFO: mask 7000 79** **** 6361
+2024-05-31 16:58:59,094 masks.py INFO: start masked_account_num 98766667774305
+2024-05-31 16:58:59,094 masks.py INFO: mask **4305
+2024-05-31 16:58:59,099 utils.py INFO: start get_list_of_transactions ..\data\operations.json
+2024-05-31 16:58:59,100 utils.py INFO: the resulting list [{'test': 'test'}]
+2024-05-31 16:58:59,106 masks.py INFO: start masked_card_num 7000792289606361
+2024-05-31 16:58:59,106 masks.py INFO: mask 7000 79** **** 6361
+2024-05-31 16:58:59,107 masks.py INFO: start masked_account_num 73654108430135874305
+2024-05-31 16:58:59,107 masks.py INFO: mask **4305
+2024-06-03 16:13:20,123 masks.py INFO: start masked_card_num 7000799978996361
+2024-06-03 16:13:20,124 masks.py INFO: mask 7000 79** **** 6361
+2024-06-03 16:13:20,124 masks.py INFO: start masked_account_num 98766667774305
+2024-06-03 16:13:20,124 masks.py INFO: mask **4305
+2024-06-03 16:13:20,129 utils.py INFO: start get_list_of_transactions ..\data\operations.json
+2024-06-03 16:13:20,130 utils.py INFO: the resulting list [{'test': 'test'}]
+2024-06-03 16:13:20,139 masks.py INFO: start masked_card_num 7000792289606361
+2024-06-03 16:13:20,139 masks.py INFO: mask 7000 79** **** 6361
+2024-06-03 16:13:20,140 masks.py INFO: start masked_account_num 73654108430135874305
+2024-06-03 16:13:20,140 masks.py INFO: mask **4305
