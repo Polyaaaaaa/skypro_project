@@ -1,53 +1,11 @@
-transactions = [
-            {
-                "id": 939719570,
-                "state": "EXECUTED",
-                "date": "2018-06-30T02:08:58.425572",
-                "operationAmount": {"amount": "9824.07", "currency": {"name": "USD", "code": "USD"}},
-                "description": "Перевод организации",
-                "from": "Счет 75106830613657916952",
-                "to": "Счет 11776614605963066702",
-            },
-            {
-                "id": 142264268,
-                "state": "EXECUTED",
-                "date": "2019-04-04T23:20:05.206878",
-                "operationAmount": {"amount": "79114.93", "currency": {"name": "USD", "code": "USD"}},
-                "description": "Перевод со счета на счет",
-                "from": "Счет 19708645243227258542",
-                "to": "Счет 75651667383060284188",
-            },
-            {
-                "id": 873106923,
-                "state": "EXECUTED",
-                "date": "2019-03-23T01:09:46.296404",
-                "operationAmount": {"amount": "43318.34", "currency": {"name": "руб.", "code": "RUB"}},
-                "description": "Перевод со счета на счет",
-                "from": "Счет 44812258784861134719",
-                "to": "Счет 74489636417521191160",
-            },
-            {
-                "id": 895315941,
-                "state": "EXECUTED",
-                "date": "2018-08-19T04:27:37.904916",
-                "operationAmount": {"amount": "56883.54", "currency": {"name": "USD", "code": "USD"}},
-                "description": "Перевод с карты на карту",
-                "from": "Visa Classic 6831982476737658",
-                "to": "Visa Platinum 8990922113665229",
-            },
-            {
-                "id": 594226727,
-                "state": "CANCELED",
-                "date": "2018-09-12T21:27:25.241689",
-                "operationAmount": {"amount": "67314.70", "currency": {"name": "руб.", "code": "RUB"}},
-                "description": "Перевод организации",
-                "from": "Visa Platinum 1246377376343588",
-                "to": "Счет 14211924144426031657",
-            },
-        ]
+from src.processing import get_new_list, get_sorted_list
+from src.utils import get_sum_transactions, get_list_of_transactions, get_xlsx_file_as_DataFrame
+from src.utils import get_csv_file_as_DataFrame, find_string, get_dict
+from src.widget import get_date, mask_elements
 
 
 def main():
+    global transactions, sorted_list_by_date, found_word, mask_elements
     print("Привет! Добро пожаловать в программу работы с банковскими транзакициями.")
     print(
         """Выберите необходимый пункт меню:
@@ -59,10 +17,13 @@ def main():
     user_input_1 = int(input())
 
     if user_input_1 == 1:
+        transactions = get_list_of_transactions(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json")
         print("Для обработки выбран json файл.")
     elif user_input_1 == 2:
+        transactions = get_csv_file_as_DataFrame(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json")
         print("Для обработки выбран csv файл.")
     elif user_input_1 == 3:
+        transactions = get_xlsx_file_as_DataFrame(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json")
         print("Для обработки выбран xlsx файл.")
 
     print(
@@ -75,24 +36,73 @@ def main():
 
     if user_input_2_upper == "EXECUTED" or user_input_2_upper == "CANCELED" or user_input_2_upper == "PENDING":
         print(f'Операции отфильтрованы по статусу "{user_input_2_upper}"')
+        filtered_list = get_new_list(transactions, user_input_2_upper)
     else:
         print(f'Статус операции "{user_input_2}" недоступен.')
         print(
             """Введите статус по которому необходимо выполнить фильтрацию. 
 Доступные для фильтровки статусы: EXECUTED, CANCELED, PENDING"""
         )
-
-
-        print("Отсортировать операции по дате? Да/Нет")
         user_input_3 = input()
+        user_input_3_upper = user_input_3.upper()
+        filtered_list = get_new_list(transactions, user_input_3_upper)
+
+    print("Отсортировать операции по дате? Да/Нет")
+    user_input_4 = input()
+    if user_input_4 == "Да":
         print("Отсортировать по возрастанию или по убыванию?")
-        user_input_4 = input()
-        print("Выводить только рублевые тразакции? Да/Нет")
         user_input_5 = input()
-        print("Отфильтровать список транзакций по определенному слову в описании? Да/Нет")
-        user_input_6 = input()
+        if user_input_5 == "по возрастанию":
+            sorted_list_by_date = get_sorted_list(filtered_list, False)
+        else:
+            sorted_list_by_date = get_sorted_list(filtered_list, True)
+    else:
+        sorted_list_by_date = filtered_list
+
+    print("Выводить только рублевые тразакции? Да/Нет")
+    user_input_6 = input()
+    transact_list = []
+    if user_input_6 == "Да":
+        for transaction in sorted_list_by_date:
+            transactions_ = get_sum_transactions(transaction)
+            transact_list.append(transactions_)
+    else:
+        for transaction in sorted_list_by_date:
+            transactions_ = get_sum_transactions(transaction)
+            transact_list.append(transactions_)
+    print("Отфильтровать список транзакций по определенному слову в описании? Да/Нет")
+    user_input_7 = input()
+    if user_input_7 == "Да" and user_input_6 == "Да":
+        print("Введите слово/выражение по которому хотите найти отфильтровать транзакции")
+        search_bar = input()
+        found_word = find_string(sorted_list_by_date, search_bar)
         print("Распечатываю итоговый список транзакций...")
+    if len(sorted_list_by_date) == 0:
+        print("Не найдено ни одной транзакции подходящей под ваши условия фильтрации")
+    else:
+        if user_input_7 == "Да" and user_input_6 == "Да":
+            print(f"Всего банковских операций в выборке: {len(found_word)}")
+            print(found_word)
+            for element in sorted_list_by_date:
+                date = element["date"]
+                description = element["description"]
+                from_ = element.get("from", "None card/account")
+                to = element["to"]
+                print(f"""{get_date(date)} {description}
+            {mask_elements(from_)} -> {mask_elements(to)}
+            Сумма: {get_sum_transactions(element)}
+            """)
+        else:
+            print(f"Всего банковских операций в выборке: {len(sorted_list_by_date)}")
+            for element in sorted_list_by_date:
+                date = element["date"]
+                description = element["description"]
+                from_ = element.get("from", "None card/account")
+                to = element["to"]
+                print(f"""{get_date(date)} {description}
+{mask_elements(from_)} -> {mask_elements(to)}
+Сумма: {get_sum_transactions(element)}
+""")
 
-        print(f"Всего банковских операций в выборке: {len(transactions)}")
 
-
+print(main())
