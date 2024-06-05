@@ -1,10 +1,20 @@
 from src.processing import get_new_list, get_sorted_list
-from src.utils import get_sum_transactions, get_list_of_transactions, get_xlsx_file_as_DataFrame
-from src.utils import get_csv_file_as_DataFrame, find_string, get_dict
+from src.utils import (
+    find_string,
+    get_csv_file_as_DataFrame,
+    get_dict,
+    get_list_of_transactions,
+    get_sum_transactions,
+    get_xlsx_file_as_DataFrame,
+)
 from src.widget import get_date, mask_elements
 
 
 def main():
+    """
+    Связующая функция
+    """
+
     global transactions, sorted_list_by_date, found_word, mask_elements
     print("Привет! Добро пожаловать в программу работы с банковскими транзакициями.")
     print(
@@ -17,13 +27,19 @@ def main():
     user_input_1 = int(input())
 
     if user_input_1 == 1:
-        transactions = get_list_of_transactions(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json")
+        transactions = get_list_of_transactions(
+            r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json"
+        )
         print("Для обработки выбран json файл.")
     elif user_input_1 == 2:
-        transactions = get_csv_file_as_DataFrame(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json")
+        transactions = get_csv_file_as_DataFrame(
+            r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json"
+        )
         print("Для обработки выбран csv файл.")
     elif user_input_1 == 3:
-        transactions = get_xlsx_file_as_DataFrame(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json")
+        transactions = get_xlsx_file_as_DataFrame(
+            r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json"
+        )
         print("Для обработки выбран xlsx файл.")
 
     print(
@@ -88,10 +104,12 @@ def main():
                 description = element["description"]
                 from_ = element.get("from", "None card/account")
                 to = element["to"]
-                print(f"""{get_date(date)} {description}
+                print(
+                    f"""{get_date(date)} {description}
             {mask_elements(from_)} -> {mask_elements(to)}
             Сумма: {get_sum_transactions(element)}
-            """)
+            """
+                )
         else:
             print(f"Всего банковских операций в выборке: {len(sorted_list_by_date)}")
             for element in sorted_list_by_date:
@@ -99,10 +117,14 @@ def main():
                 description = element["description"]
                 from_ = element.get("from", "None card/account")
                 to = element["to"]
-                print(f"""{get_date(date)} {description}
+                print(
+                    f"""{get_date(date)} {description}
 {mask_elements(from_)} -> {mask_elements(to)}
 Сумма: {get_sum_transactions(element)}
-""")
+"""
+                )
+    return "That's all"
 
 
-print(main())
+if __name__ == '__main__':
+    main()

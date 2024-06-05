@@ -1,14 +1,13 @@
 import json
 import logging
 import os
-from typing import Any
-
-import requests
-from dotenv import load_dotenv
-import pandas as pd
-
 import re
 from collections import Counter
+from typing import Any
+
+import pandas as pd
+import requests
+from dotenv import load_dotenv
 
 logger = logging.getLogger("utils")
 file_handler = logging.FileHandler("loggers_info.txt")
