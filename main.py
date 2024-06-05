@@ -8,6 +8,7 @@ from src.utils import (
     get_xlsx_file_as_DataFrame,
 )
 from src.widget import get_date, mask_elements
+import os
 
 
 def main():
@@ -15,7 +16,7 @@ def main():
     Связующая функция
     """
 
-    global transactions, sorted_list_by_date, found_word, mask_elements
+    global transactions, sorted_list_by_date, found_word
     print("Привет! Добро пожаловать в программу работы с банковскими транзакициями.")
     print(
         """Выберите необходимый пункт меню:
@@ -27,19 +28,13 @@ def main():
     user_input_1 = int(input())
 
     if user_input_1 == 1:
-        transactions = get_list_of_transactions(
-            r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json"
-        )
+        transactions = get_list_of_transactions(os.path.join("data", "operations.json"))
         print("Для обработки выбран json файл.")
     elif user_input_1 == 2:
-        transactions = get_csv_file_as_DataFrame(
-            r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json"
-        )
+        transactions = get_csv_file_as_DataFrame(os.path.join("data", "transactions.csv"))
         print("Для обработки выбран csv файл.")
     elif user_input_1 == 3:
-        transactions = get_xlsx_file_as_DataFrame(
-            r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\operations.json"
-        )
+        transactions = get_xlsx_file_as_DataFrame(os.path.join("data", "transactions_excel.xlsx"))
         print("Для обработки выбран xlsx файл.")
 
     print(
