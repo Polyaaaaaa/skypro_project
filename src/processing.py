@@ -5,7 +5,7 @@ def get_new_list(list_of_dicts: list, state: str = "EXECUTED") -> list:
     """функция, фильтрующая список"""
     new_list = []
     for i in list_of_dicts:
-        if i.get("state") == state:
+        if i.get("state", "") == state:
             new_list.append(i)
     return new_list
 

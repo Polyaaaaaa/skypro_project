@@ -85,12 +85,12 @@ def get_xlsx_file_as_DataFrame(filepath: str) -> dict:
     return filepath_dict
 
 
-def get_csv_file_as_DataFrame(filepath: str) -> dict:
+def get_csv_file_as_DataFrame(filepath: str) -> list:
     """
     Реализовывает считывание финансовых операций с CSV-файлов
     """
-    reviews = pd.read_csv(filepath, sep=";")
-    filepath_dict = reviews.to_dict()
+    reviews = pd.read_csv(filepath)
+    filepath_dict = reviews.to_dict(orient="records")
     return filepath_dict
 
 
@@ -121,3 +121,6 @@ def get_dict(transactions: list, categories: dict) -> dict:
     categories["Перевод с карты на карту"] += counter[pattern_3.pattern]
 
     return categories
+
+print(get_csv_file_as_DataFrame(r"C:\Users\Student Free\PycharmProjects\pythonProject2\data\transactions.csv"))
+
