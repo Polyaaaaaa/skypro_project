@@ -121,5 +121,3 @@ def get_dict(transactions: list, categories: dict) -> dict:
     categories["Перевод с карты на карту"] += counter[pattern_3.pattern]
 
     return categories
-
-

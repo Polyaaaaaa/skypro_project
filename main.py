@@ -77,7 +77,7 @@ def main():
         for transaction in sorted_list_by_date:
             if "currency_code" in transaction and transaction.get("currency_code") == "RUB":
                 transactions_.append(transaction)
-            elif transaction["operationAmount"]["currency"]["code"] == "RUB":
+            elif "operationAmount" in transaction and transaction["operationAmount"]["currency"]["code"] == "RUB":
                 transactions_.append(transaction)
 
         sorted_list_by_date = transactions_
@@ -95,7 +95,6 @@ def main():
     else:
         print("Распечатываю итоговый список транзакций...")
 
-
     if len(sorted_list_by_date) == 0:
         print("Не найдено ни одной транзакции подходящей под ваши условия фильтрации")
     else:
@@ -105,12 +104,12 @@ def main():
             for element in sorted_list_by_date:
                 date = element["date"]
                 description = element["description"]
-                from_ = element.get("from", "None card/account")
-                to = element["to"]
+                from_ = str(element.get("from", "None card/account"))
+                to = str(element["to"])
                 print(
                     f"""{get_date(date)} {description}
             {mask_elements(from_)} -> {mask_elements(to)}
-            Сумма: {element["operationAmount"]["amount"]} руб.
+            Сумма: {transactions_} руб.
             """
                 )
         else:
@@ -118,8 +117,8 @@ def main():
             for element in sorted_list_by_date:
                 date = element["date"]
                 description = element["description"]
-                from_ = element.get("from", "None card/account")
-                to = element["to"]
+                from_ = str(element.get("from", "None card/account"))
+                to = str(element["to"])
                 print(
                     f"""{get_date(date)} {description}
 {mask_elements(from_)} -> {mask_elements(to)}
@@ -129,5 +128,5 @@ def main():
     return "That's all"
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     main()

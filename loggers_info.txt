@@ -3627,3 +3627,367 @@
 2024-06-06 13:36:48,758 masks.py INFO: mask **2700
 2024-06-06 13:36:48,758 masks.py INFO: start masked_account_num 90417871337969064865
 2024-06-06 13:36:48,758 masks.py INFO: mask **4865
+2024-06-06 17:49:50,320 masks.py INFO: start masked_card_num 0773092093872450
+2024-06-06 17:49:50,320 masks.py INFO: mask 0773 09** **** 2450
+2024-06-06 17:49:50,320 masks.py INFO: start masked_card_num 8602781449570491
+2024-06-06 17:49:50,321 masks.py INFO: mask 8602 78** **** 0491
+2024-06-06 17:49:50,326 masks.py INFO: start masked_card_num 3093124722348405
+2024-06-06 17:49:50,326 masks.py INFO: mask 3093 12** **** 8405
+2024-06-06 17:49:50,326 masks.py INFO: start masked_card_num 6950002720800411
+2024-06-06 17:49:50,326 masks.py INFO: mask 6950 00** **** 0411
+2024-06-06 17:49:50,328 masks.py INFO: start masked_account_num 22246813624466689601
+2024-06-06 17:49:50,328 masks.py INFO: mask **9601
+2024-06-06 17:49:50,328 masks.py INFO: start masked_account_num 60148056083328746527
+2024-06-06 17:49:50,328 masks.py INFO: mask **6527
+2024-06-06 17:49:50,330 masks.py INFO: start masked_card_num 5313948287096164
+2024-06-06 17:49:50,330 masks.py INFO: mask 5313 94** **** 6164
+2024-06-06 17:49:50,330 masks.py INFO: start masked_card_num 0329774489991288
+2024-06-06 17:49:50,330 masks.py INFO: mask 0329 77** **** 1288
+2024-06-06 17:49:50,332 masks.py INFO: start masked_card_num 5289343085624249
+2024-06-06 17:49:50,332 masks.py INFO: mask 5289 34** **** 4249
+2024-06-06 17:49:50,332 masks.py INFO: start masked_account_num 37876144219366357273
+2024-06-06 17:49:50,332 masks.py INFO: mask **7273
+2024-06-06 17:49:50,334 masks.py INFO: start masked_card_num 6902837737884644
+2024-06-06 17:49:50,334 masks.py INFO: mask 6902 83** **** 4644
+2024-06-06 17:49:50,334 masks.py INFO: start masked_card_num 1368443024115273
+2024-06-06 17:49:50,334 masks.py INFO: mask 1368 44** **** 5273
+2024-06-06 17:49:50,335 masks.py INFO: start masked_card_num 9698316448168820
+2024-06-06 17:49:50,335 masks.py INFO: mask 9698 31** **** 8820
+2024-06-06 17:49:50,335 masks.py INFO: start masked_account_num 91507178049597221508
+2024-06-06 17:49:50,335 masks.py INFO: mask **1508
+2024-06-06 17:49:50,337 masks.py INFO: start masked_card_num 8455447150087314
+2024-06-06 17:49:50,337 masks.py INFO: mask 8455 44** **** 7314
+2024-06-06 17:49:50,337 masks.py INFO: start masked_account_num 70453658863403233739
+2024-06-06 17:49:50,337 masks.py INFO: mask **3739
+2024-06-06 17:49:50,339 masks.py INFO: start masked_card_num 8817383202472795
+2024-06-06 17:49:50,339 masks.py INFO: mask 8817 38** **** 2795
+2024-06-06 17:49:50,339 masks.py INFO: start masked_card_num 3942175254816690
+2024-06-06 17:49:50,339 masks.py INFO: mask 3942 17** **** 6690
+2024-06-06 17:49:50,341 masks.py INFO: start masked_account_num 86244850477007883319
+2024-06-06 17:49:50,341 masks.py INFO: mask **3319
+2024-06-06 17:49:50,341 masks.py INFO: start masked_account_num 81698090448201122541
+2024-06-06 17:49:50,341 masks.py INFO: mask **2541
+2024-06-06 17:49:50,343 masks.py INFO: start masked_card_num 6574691179829422
+2024-06-06 17:49:50,343 masks.py INFO: mask 6574 69** **** 9422
+2024-06-06 17:49:50,343 masks.py INFO: start masked_card_num 4659403386698758
+2024-06-06 17:49:50,343 masks.py INFO: mask 4659 40** **** 8758
+2024-06-06 17:49:50,345 masks.py INFO: start masked_card_num 7725500610751579
+2024-06-06 17:49:50,345 masks.py INFO: mask 7725 50** **** 1579
+2024-06-06 17:49:50,345 masks.py INFO: start masked_card_num 8189486607683162
+2024-06-06 17:49:50,345 masks.py INFO: mask 8189 48** **** 3162
+2024-06-06 17:49:50,347 masks.py INFO: start masked_account_num 57132829784776201423
+2024-06-06 17:49:50,347 masks.py INFO: mask **1423
+2024-06-06 17:49:50,347 masks.py INFO: start masked_account_num 95605694496875862934
+2024-06-06 17:49:50,347 masks.py INFO: mask **2934
+2024-06-06 17:49:50,349 masks.py INFO: start masked_card_num 7657178713716531
+2024-06-06 17:49:50,349 masks.py INFO: mask 7657 17** **** 6531
+2024-06-06 17:49:50,349 masks.py INFO: start masked_card_num 5442625865778510
+2024-06-06 17:49:50,349 masks.py INFO: mask 5442 62** **** 8510
+2024-06-06 17:54:34,743 masks.py INFO: start masked_account_num 58936710508356884628
+2024-06-06 17:54:34,744 masks.py INFO: mask **4628
+2024-06-06 17:54:34,748 masks.py INFO: start masked_card_num 7657178713716531
+2024-06-06 17:54:34,748 masks.py INFO: mask 7657 17** **** 6531
+2024-06-06 17:54:34,748 masks.py INFO: start masked_card_num 5442625865778510
+2024-06-06 17:54:34,748 masks.py INFO: mask 5442 62** **** 8510
+2024-06-06 17:54:34,750 masks.py INFO: start masked_card_num 8926691998863176
+2024-06-06 17:54:34,750 masks.py INFO: mask 8926 69** **** 3176
+2024-06-06 17:54:34,750 masks.py INFO: start masked_card_num 9331952063031046
+2024-06-06 17:54:34,750 masks.py INFO: mask 9331 95** **** 1046
+2024-06-06 17:54:34,752 masks.py INFO: start masked_card_num 8455447150087314
+2024-06-06 17:54:34,752 masks.py INFO: mask 8455 44** **** 7314
+2024-06-06 17:54:34,752 masks.py INFO: start masked_account_num 70453658863403233739
+2024-06-06 17:54:34,752 masks.py INFO: mask **3739
+2024-06-06 17:54:34,754 masks.py INFO: start masked_account_num 00001929651993491151
+2024-06-06 17:54:34,754 masks.py INFO: mask **1151
+2024-06-06 17:54:34,754 masks.py INFO: start masked_account_num 94107008805088717279
+2024-06-06 17:54:34,754 masks.py INFO: mask **7279
+2024-06-06 17:54:34,756 masks.py INFO: start masked_card_num 3057946398768198
+2024-06-06 17:54:34,756 masks.py INFO: mask 3057 94** **** 8198
+2024-06-06 17:54:34,756 masks.py INFO: start masked_card_num 4035896941119221
+2024-06-06 17:54:34,756 masks.py INFO: mask 4035 89** **** 9221
+2024-06-06 17:54:34,757 masks.py INFO: start masked_card_num 0773092093872450
+2024-06-06 17:54:34,757 masks.py INFO: mask 0773 09** **** 2450
+2024-06-06 17:54:34,757 masks.py INFO: start masked_card_num 8602781449570491
+2024-06-06 17:54:34,757 masks.py INFO: mask 8602 78** **** 0491
+2024-06-06 17:54:34,759 masks.py INFO: start masked_account_num 41878599375303475996
+2024-06-06 17:54:34,759 masks.py INFO: mask **5996
+2024-06-06 17:54:34,761 masks.py INFO: start masked_card_num 7986449445672194
+2024-06-06 17:54:34,761 masks.py INFO: mask 7986 44** **** 2194
+2024-06-06 17:54:34,761 masks.py INFO: start masked_card_num 8862361645542151
+2024-06-06 17:54:34,761 masks.py INFO: mask 8862 36** **** 2151
+2024-06-06 17:54:34,763 masks.py INFO: start masked_account_num 36602273830151626580
+2024-06-06 17:54:34,763 masks.py INFO: mask **6580
+2024-06-06 17:54:34,763 masks.py INFO: start masked_account_num 61127622361324528517
+2024-06-06 17:54:34,763 masks.py INFO: mask **8517
+2024-06-06 17:54:34,765 masks.py INFO: start masked_card_num 7725500610751579
+2024-06-06 17:54:34,765 masks.py INFO: mask 7725 50** **** 1579
+2024-06-06 17:54:34,765 masks.py INFO: start masked_card_num 8189486607683162
+2024-06-06 17:54:34,765 masks.py INFO: mask 8189 48** **** 3162
+2024-06-06 17:54:34,767 masks.py INFO: start masked_card_num 4061237171643434
+2024-06-06 17:54:34,767 masks.py INFO: mask 4061 23** **** 3434
+2024-06-06 17:54:34,767 masks.py INFO: start masked_card_num 7539829899017635
+2024-06-06 17:54:34,767 masks.py INFO: mask 7539 82** **** 7635
+2024-06-06 17:54:34,769 masks.py INFO: start masked_account_num 22246813624466689601
+2024-06-06 17:54:34,769 masks.py INFO: mask **9601
+2024-06-06 17:54:34,769 masks.py INFO: start masked_account_num 60148056083328746527
+2024-06-06 17:54:34,769 masks.py INFO: mask **6527
+2024-06-06 17:54:34,771 masks.py INFO: start masked_card_num 5289343085624249
+2024-06-06 17:54:34,771 masks.py INFO: mask 5289 34** **** 4249
+2024-06-06 17:54:34,771 masks.py INFO: start masked_account_num 37876144219366357273
+2024-06-06 17:54:34,771 masks.py INFO: mask **7273
+2024-06-06 17:54:34,773 masks.py INFO: start masked_card_num 8817383202472795
+2024-06-06 17:54:34,773 masks.py INFO: mask 8817 38** **** 2795
+2024-06-06 17:54:34,773 masks.py INFO: start masked_card_num 3942175254816690
+2024-06-06 17:54:34,773 masks.py INFO: mask 3942 17** **** 6690
+2024-06-06 17:54:34,775 masks.py INFO: start masked_card_num 9698316448168820
+2024-06-06 17:54:34,775 masks.py INFO: mask 9698 31** **** 8820
+2024-06-06 17:54:34,775 masks.py INFO: start masked_account_num 91507178049597221508
+2024-06-06 17:54:34,775 masks.py INFO: mask **1508
+2024-06-06 17:54:34,777 masks.py INFO: start masked_card_num 6574691179829422
+2024-06-06 17:54:34,777 masks.py INFO: mask 6574 69** **** 9422
+2024-06-06 17:54:34,777 masks.py INFO: start masked_card_num 4659403386698758
+2024-06-06 17:54:34,777 masks.py INFO: mask 4659 40** **** 8758
+2024-06-06 17:54:34,779 masks.py INFO: start masked_card_num 0560253835243874
+2024-06-06 17:54:34,779 masks.py INFO: mask 0560 25** **** 3874
+2024-06-06 17:54:34,779 masks.py INFO: start masked_account_num 44603300489524463522
+2024-06-06 17:54:34,779 masks.py INFO: mask **3522
+2024-06-06 17:54:34,781 masks.py INFO: start masked_account_num 86244850477007883319
+2024-06-06 17:54:34,781 masks.py INFO: mask **3319
+2024-06-06 17:54:34,781 masks.py INFO: start masked_account_num 81698090448201122541
+2024-06-06 17:54:34,781 masks.py INFO: mask **2541
+2024-06-06 17:54:34,783 masks.py INFO: start masked_card_num 1399159034596740
+2024-06-06 17:54:34,783 masks.py INFO: mask 1399 15** **** 6740
+2024-06-06 17:54:34,783 masks.py INFO: start masked_account_num 71814990641193663905
+2024-06-06 17:54:34,783 masks.py INFO: mask **3905
+2024-06-06 17:54:34,785 masks.py INFO: start masked_card_num 9171903868456946
+2024-06-06 17:54:34,785 masks.py INFO: mask 9171 90** **** 6946
+2024-06-06 17:54:34,785 masks.py INFO: start masked_card_num 1486898442392527
+2024-06-06 17:54:34,785 masks.py INFO: mask 1486 89** **** 2527
+2024-06-06 17:54:34,787 masks.py INFO: start masked_account_num 36880956803774247605
+2024-06-06 17:54:34,787 masks.py INFO: mask **7605
+2024-06-06 17:54:34,787 masks.py INFO: start masked_account_num 57967135740972430525
+2024-06-06 17:54:34,787 masks.py INFO: mask **0525
+2024-06-06 17:54:34,789 masks.py INFO: start masked_card_num 1563074999448104
+2024-06-06 17:54:34,789 masks.py INFO: mask 1563 07** **** 8104
+2024-06-06 17:54:34,789 masks.py INFO: start masked_card_num 6133882980108564
+2024-06-06 17:54:34,789 masks.py INFO: mask 6133 88** **** 8564
+2024-06-06 17:54:34,791 masks.py INFO: start masked_card_num 3723527446109611
+2024-06-06 17:54:34,791 masks.py INFO: mask 3723 52** **** 9611
+2024-06-06 17:54:34,791 masks.py INFO: start masked_card_num 4201111974501655
+2024-06-06 17:54:34,791 masks.py INFO: mask 4201 11** **** 1655
+2024-06-06 17:54:34,793 masks.py INFO: start masked_card_num 0134021618597734
+2024-06-06 17:54:34,793 masks.py INFO: mask 0134 02** **** 7734
+2024-06-06 17:54:34,793 masks.py INFO: start masked_card_num 7974416741612242
+2024-06-06 17:54:34,793 masks.py INFO: mask 7974 41** **** 2242
+2024-06-06 17:54:34,795 masks.py INFO: start masked_card_num 2343953148883158
+2024-06-06 17:54:34,795 masks.py INFO: mask 2343 95** **** 3158
+2024-06-06 17:54:34,795 masks.py INFO: start masked_card_num 8400869379923599
+2024-06-06 17:54:34,795 masks.py INFO: mask 8400 86** **** 3599
+2024-06-06 17:54:34,797 masks.py INFO: start masked_card_num 8924432019137202
+2024-06-06 17:54:34,797 masks.py INFO: mask 8924 43** **** 7202
+2024-06-06 17:54:34,797 masks.py INFO: start masked_card_num 5653663363322651
+2024-06-06 17:54:34,797 masks.py INFO: mask 5653 66** **** 2651
+2024-06-06 17:54:34,799 masks.py INFO: start masked_card_num 6902837737884644
+2024-06-06 17:54:34,799 masks.py INFO: mask 6902 83** **** 4644
+2024-06-06 17:54:34,799 masks.py INFO: start masked_card_num 1368443024115273
+2024-06-06 17:54:34,799 masks.py INFO: mask 1368 44** **** 5273
+2024-06-06 17:54:34,801 masks.py INFO: start masked_card_num 9458117363112215
+2024-06-06 17:54:34,801 masks.py INFO: mask 9458 11** **** 2215
+2024-06-06 17:54:34,801 masks.py INFO: start masked_card_num 6335859532296628
+2024-06-06 17:54:34,801 masks.py INFO: mask 6335 85** **** 6628
+2024-06-06 17:54:34,803 masks.py INFO: start masked_account_num 57132829784776201423
+2024-06-06 17:54:34,803 masks.py INFO: mask **1423
+2024-06-06 17:54:34,803 masks.py INFO: start masked_account_num 95605694496875862934
+2024-06-06 17:54:34,803 masks.py INFO: mask **2934
+2024-06-06 17:54:34,805 masks.py INFO: start masked_account_num 01411847038697732472
+2024-06-06 17:54:34,805 masks.py INFO: mask **2472
+2024-06-06 17:54:34,805 masks.py INFO: start masked_account_num 67457374082601064845
+2024-06-06 17:54:34,805 masks.py INFO: mask **4845
+2024-06-06 17:54:34,807 masks.py INFO: start masked_card_num 3093124722348405
+2024-06-06 17:54:34,807 masks.py INFO: mask 3093 12** **** 8405
+2024-06-06 17:54:34,807 masks.py INFO: start masked_card_num 6950002720800411
+2024-06-06 17:54:34,807 masks.py INFO: mask 6950 00** **** 0411
+2024-06-06 17:54:34,809 masks.py INFO: start masked_card_num 4205969069978141
+2024-06-06 17:54:34,809 masks.py INFO: mask 4205 96** **** 8141
+2024-06-06 17:54:34,809 masks.py INFO: start masked_card_num 3182665825206884
+2024-06-06 17:54:34,809 masks.py INFO: mask 3182 66** **** 6884
+2024-06-06 17:54:34,811 masks.py INFO: start masked_card_num 5313948287096164
+2024-06-06 17:54:34,811 masks.py INFO: mask 5313 94** **** 6164
+2024-06-06 17:54:34,811 masks.py INFO: start masked_card_num 0329774489991288
+2024-06-06 17:54:34,811 masks.py INFO: mask 0329 77** **** 1288
+2024-06-06 17:55:27,375 masks.py INFO: start masked_account_num 75647434231761535859
+2024-06-06 17:55:27,375 masks.py INFO: mask **5859
+2024-06-06 17:55:27,376 masks.py INFO: start masked_account_num 44859048793086957451
+2024-06-06 17:55:27,376 masks.py INFO: mask **7451
+2024-06-06 17:55:27,381 masks.py INFO: start masked_account_num 83739717055666813179
+2024-06-06 17:55:27,381 masks.py INFO: mask **3179
+2024-06-06 17:55:27,381 masks.py INFO: start masked_card_num 5309985455135498
+2024-06-06 17:55:27,381 masks.py INFO: mask 5309 98** **** 5498
+2024-06-06 17:55:27,381 masks.py INFO: start masked_card_num 4613141986927768
+2024-06-06 17:55:27,381 masks.py INFO: mask 4613 14** **** 7768
+2024-06-06 17:55:27,383 masks.py INFO: start masked_card_num 8555423564337493
+2024-06-06 17:55:27,383 masks.py INFO: mask 8555 42** **** 7493
+2024-06-06 17:55:27,383 masks.py INFO: start masked_account_num 80979410926211688985
+2024-06-06 17:55:27,383 masks.py INFO: mask **8985
+2024-06-06 17:55:27,383 masks.py INFO: start masked_card_num 7575628496748633
+2024-06-06 17:55:27,383 masks.py INFO: mask 7575 62** **** 8633
+2024-06-06 17:55:27,383 masks.py INFO: start masked_card_num 8201977224219171
+2024-06-06 17:55:27,383 masks.py INFO: mask 8201 97** **** 9171
+2024-06-06 17:55:27,384 masks.py INFO: start masked_card_num 7004562378757988
+2024-06-06 17:55:27,384 masks.py INFO: mask 7004 56** **** 7988
+2024-06-06 17:55:27,384 masks.py INFO: start masked_card_num 0825255021365694
+2024-06-06 17:55:27,384 masks.py INFO: mask 0825 25** **** 5694
+2024-06-06 17:55:27,384 masks.py INFO: start masked_card_num 2510997056903668
+2024-06-06 17:55:27,384 masks.py INFO: mask 2510 99** **** 3668
+2024-06-06 17:55:27,384 masks.py INFO: start masked_card_num 5176450912871980
+2024-06-06 17:55:27,384 masks.py INFO: mask 5176 45** **** 1980
+2024-06-06 17:55:27,386 masks.py INFO: start masked_card_num 6505902114235361
+2024-06-06 17:55:27,386 masks.py INFO: mask 6505 90** **** 5361
+2024-06-06 17:55:27,386 masks.py INFO: start masked_account_num 35036089776755124501
+2024-06-06 17:55:27,386 masks.py INFO: mask **4501
+2024-06-06 17:55:27,386 masks.py INFO: start masked_card_num 5867137497562917
+2024-06-06 17:55:27,386 masks.py INFO: mask 5867 13** **** 2917
+2024-06-06 17:55:27,386 masks.py INFO: start masked_card_num 3332388352371784
+2024-06-06 17:55:27,386 masks.py INFO: mask 3332 38** **** 1784
+2024-06-06 17:55:27,388 masks.py INFO: start masked_card_num 1495416283887670
+2024-06-06 17:55:27,388 masks.py INFO: mask 1495 41** **** 7670
+2024-06-06 17:55:27,388 masks.py INFO: start masked_card_num 5120967507423143
+2024-06-06 17:55:27,388 masks.py INFO: mask 5120 96** **** 3143
+2024-06-06 17:56:27,544 masks.py INFO: start masked_card_num 5313948287096164
+2024-06-06 17:56:27,545 masks.py INFO: mask 5313 94** **** 6164
+2024-06-06 17:56:27,545 masks.py INFO: start masked_card_num 0329774489991288
+2024-06-06 17:56:27,545 masks.py INFO: mask 0329 77** **** 1288
+2024-06-06 17:58:02,222 masks.py INFO: start masked_account_num 58936710508356884628
+2024-06-06 17:58:02,222 masks.py INFO: mask **4628
+2024-06-06 17:59:24,992 masks.py INFO: start masked_account_num 58936710508356884628
+2024-06-06 17:59:24,992 masks.py INFO: mask **4628
+2024-06-06 17:59:24,997 masks.py INFO: start masked_card_num 7657178713716531
+2024-06-06 17:59:24,997 masks.py INFO: mask 7657 17** **** 6531
+2024-06-06 17:59:24,997 masks.py INFO: start masked_card_num 5442625865778510
+2024-06-06 17:59:24,997 masks.py INFO: mask 5442 62** **** 8510
+2024-06-06 17:59:24,999 masks.py INFO: start masked_card_num 8926691998863176
+2024-06-06 17:59:24,999 masks.py INFO: mask 8926 69** **** 3176
+2024-06-06 17:59:24,999 masks.py INFO: start masked_card_num 9331952063031046
+2024-06-06 17:59:24,999 masks.py INFO: mask 9331 95** **** 1046
+2024-06-06 17:59:25,001 masks.py INFO: start masked_card_num 8455447150087314
+2024-06-06 17:59:25,001 masks.py INFO: mask 8455 44** **** 7314
+2024-06-06 17:59:25,001 masks.py INFO: start masked_account_num 70453658863403233739
+2024-06-06 17:59:25,001 masks.py INFO: mask **3739
+2024-06-06 17:59:25,003 masks.py INFO: start masked_account_num 00001929651993491151
+2024-06-06 17:59:25,003 masks.py INFO: mask **1151
+2024-06-06 17:59:25,003 masks.py INFO: start masked_account_num 94107008805088717279
+2024-06-06 17:59:25,003 masks.py INFO: mask **7279
+2024-06-06 17:59:25,005 masks.py INFO: start masked_card_num 3057946398768198
+2024-06-06 17:59:25,005 masks.py INFO: mask 3057 94** **** 8198
+2024-06-06 17:59:25,005 masks.py INFO: start masked_card_num 4035896941119221
+2024-06-06 17:59:25,005 masks.py INFO: mask 4035 89** **** 9221
+2024-06-06 17:59:25,007 masks.py INFO: start masked_card_num 0773092093872450
+2024-06-06 17:59:25,007 masks.py INFO: mask 0773 09** **** 2450
+2024-06-06 17:59:25,007 masks.py INFO: start masked_card_num 8602781449570491
+2024-06-06 17:59:25,007 masks.py INFO: mask 8602 78** **** 0491
+2024-06-06 17:59:25,009 masks.py INFO: start masked_account_num 41878599375303475996
+2024-06-06 17:59:25,009 masks.py INFO: mask **5996
+2024-06-06 17:59:25,011 masks.py INFO: start masked_card_num 7986449445672194
+2024-06-06 17:59:25,011 masks.py INFO: mask 7986 44** **** 2194
+2024-06-06 17:59:25,011 masks.py INFO: start masked_card_num 8862361645542151
+2024-06-06 17:59:25,011 masks.py INFO: mask 8862 36** **** 2151
+2024-06-06 17:59:25,013 masks.py INFO: start masked_account_num 36602273830151626580
+2024-06-06 17:59:25,013 masks.py INFO: mask **6580
+2024-06-06 17:59:25,013 masks.py INFO: start masked_account_num 61127622361324528517
+2024-06-06 17:59:25,013 masks.py INFO: mask **8517
+2024-06-06 17:59:25,014 masks.py INFO: start masked_card_num 7725500610751579
+2024-06-06 17:59:25,014 masks.py INFO: mask 7725 50** **** 1579
+2024-06-06 17:59:25,014 masks.py INFO: start masked_card_num 8189486607683162
+2024-06-06 17:59:25,014 masks.py INFO: mask 8189 48** **** 3162
+2024-06-06 17:59:25,016 masks.py INFO: start masked_card_num 4061237171643434
+2024-06-06 17:59:25,016 masks.py INFO: mask 4061 23** **** 3434
+2024-06-06 17:59:25,016 masks.py INFO: start masked_card_num 7539829899017635
+2024-06-06 17:59:25,016 masks.py INFO: mask 7539 82** **** 7635
+2024-06-06 17:59:25,018 masks.py INFO: start masked_account_num 22246813624466689601
+2024-06-06 17:59:25,018 masks.py INFO: mask **9601
+2024-06-06 17:59:25,018 masks.py INFO: start masked_account_num 60148056083328746527
+2024-06-06 17:59:25,018 masks.py INFO: mask **6527
+2024-06-06 17:59:25,020 masks.py INFO: start masked_card_num 5289343085624249
+2024-06-06 17:59:25,020 masks.py INFO: mask 5289 34** **** 4249
+2024-06-06 17:59:25,020 masks.py INFO: start masked_account_num 37876144219366357273
+2024-06-06 17:59:25,020 masks.py INFO: mask **7273
+2024-06-06 17:59:25,022 masks.py INFO: start masked_card_num 8817383202472795
+2024-06-06 17:59:25,022 masks.py INFO: mask 8817 38** **** 2795
+2024-06-06 17:59:25,022 masks.py INFO: start masked_card_num 3942175254816690
+2024-06-06 17:59:25,022 masks.py INFO: mask 3942 17** **** 6690
+2024-06-06 17:59:25,024 masks.py INFO: start masked_card_num 9698316448168820
+2024-06-06 17:59:25,024 masks.py INFO: mask 9698 31** **** 8820
+2024-06-06 17:59:25,024 masks.py INFO: start masked_account_num 91507178049597221508
+2024-06-06 17:59:25,024 masks.py INFO: mask **1508
+2024-06-06 17:59:25,026 masks.py INFO: start masked_card_num 6574691179829422
+2024-06-06 17:59:25,026 masks.py INFO: mask 6574 69** **** 9422
+2024-06-06 17:59:25,026 masks.py INFO: start masked_card_num 4659403386698758
+2024-06-06 17:59:25,026 masks.py INFO: mask 4659 40** **** 8758
+2024-06-06 17:59:25,028 masks.py INFO: start masked_card_num 0560253835243874
+2024-06-06 17:59:25,028 masks.py INFO: mask 0560 25** **** 3874
+2024-06-06 17:59:25,028 masks.py INFO: start masked_account_num 44603300489524463522
+2024-06-06 17:59:25,028 masks.py INFO: mask **3522
+2024-06-06 17:59:25,030 masks.py INFO: start masked_account_num 86244850477007883319
+2024-06-06 17:59:25,030 masks.py INFO: mask **3319
+2024-06-06 17:59:25,030 masks.py INFO: start masked_account_num 81698090448201122541
+2024-06-06 17:59:25,030 masks.py INFO: mask **2541
+2024-06-06 17:59:25,032 masks.py INFO: start masked_card_num 1399159034596740
+2024-06-06 17:59:25,032 masks.py INFO: mask 1399 15** **** 6740
+2024-06-06 17:59:25,032 masks.py INFO: start masked_account_num 71814990641193663905
+2024-06-06 17:59:25,032 masks.py INFO: mask **3905
+2024-06-06 17:59:25,034 masks.py INFO: start masked_card_num 9171903868456946
+2024-06-06 17:59:25,034 masks.py INFO: mask 9171 90** **** 6946
+2024-06-06 17:59:25,034 masks.py INFO: start masked_card_num 1486898442392527
+2024-06-06 17:59:25,034 masks.py INFO: mask 1486 89** **** 2527
+2024-06-06 17:59:25,036 masks.py INFO: start masked_account_num 36880956803774247605
+2024-06-06 17:59:25,036 masks.py INFO: mask **7605
+2024-06-06 17:59:25,036 masks.py INFO: start masked_account_num 57967135740972430525
+2024-06-06 17:59:25,036 masks.py INFO: mask **0525
+2024-06-06 17:59:25,038 masks.py INFO: start masked_card_num 1563074999448104
+2024-06-06 17:59:25,038 masks.py INFO: mask 1563 07** **** 8104
+2024-06-06 17:59:25,038 masks.py INFO: start masked_card_num 6133882980108564
+2024-06-06 17:59:25,038 masks.py INFO: mask 6133 88** **** 8564
+2024-06-06 17:59:25,040 masks.py INFO: start masked_card_num 3723527446109611
+2024-06-06 17:59:25,040 masks.py INFO: mask 3723 52** **** 9611
+2024-06-06 17:59:25,040 masks.py INFO: start masked_card_num 4201111974501655
+2024-06-06 17:59:25,040 masks.py INFO: mask 4201 11** **** 1655
+2024-06-06 17:59:25,042 masks.py INFO: start masked_card_num 0134021618597734
+2024-06-06 17:59:25,042 masks.py INFO: mask 0134 02** **** 7734
+2024-06-06 17:59:25,042 masks.py INFO: start masked_card_num 7974416741612242
+2024-06-06 17:59:25,042 masks.py INFO: mask 7974 41** **** 2242
+2024-06-06 17:59:25,044 masks.py INFO: start masked_card_num 2343953148883158
+2024-06-06 17:59:25,044 masks.py INFO: mask 2343 95** **** 3158
+2024-06-06 17:59:25,044 masks.py INFO: start masked_card_num 8400869379923599
+2024-06-06 17:59:25,044 masks.py INFO: mask 8400 86** **** 3599
+2024-06-06 17:59:25,046 masks.py INFO: start masked_card_num 8924432019137202
+2024-06-06 17:59:25,046 masks.py INFO: mask 8924 43** **** 7202
+2024-06-06 17:59:25,046 masks.py INFO: start masked_card_num 5653663363322651
+2024-06-06 17:59:25,046 masks.py INFO: mask 5653 66** **** 2651
+2024-06-06 17:59:25,048 masks.py INFO: start masked_card_num 6902837737884644
+2024-06-06 17:59:25,048 masks.py INFO: mask 6902 83** **** 4644
+2024-06-06 17:59:25,048 masks.py INFO: start masked_card_num 1368443024115273
+2024-06-06 17:59:25,048 masks.py INFO: mask 1368 44** **** 5273
+2024-06-06 17:59:25,050 masks.py INFO: start masked_card_num 9458117363112215
+2024-06-06 17:59:25,050 masks.py INFO: mask 9458 11** **** 2215
+2024-06-06 17:59:25,050 masks.py INFO: start masked_card_num 6335859532296628
+2024-06-06 17:59:25,050 masks.py INFO: mask 6335 85** **** 6628
+2024-06-06 17:59:25,052 masks.py INFO: start masked_account_num 57132829784776201423
+2024-06-06 17:59:25,052 masks.py INFO: mask **1423
+2024-06-06 17:59:25,052 masks.py INFO: start masked_account_num 95605694496875862934
+2024-06-06 17:59:25,052 masks.py INFO: mask **2934
+2024-06-06 17:59:25,054 masks.py INFO: start masked_account_num 01411847038697732472
+2024-06-06 17:59:25,054 masks.py INFO: mask **2472
+2024-06-06 17:59:25,054 masks.py INFO: start masked_account_num 67457374082601064845
+2024-06-06 17:59:25,054 masks.py INFO: mask **4845
+2024-06-06 17:59:25,056 masks.py INFO: start masked_card_num 3093124722348405
+2024-06-06 17:59:25,056 masks.py INFO: mask 3093 12** **** 8405
+2024-06-06 17:59:25,056 masks.py INFO: start masked_card_num 6950002720800411
+2024-06-06 17:59:25,056 masks.py INFO: mask 6950 00** **** 0411
+2024-06-06 17:59:25,058 masks.py INFO: start masked_card_num 4205969069978141
+2024-06-06 17:59:25,058 masks.py INFO: mask 4205 96** **** 8141
+2024-06-06 17:59:25,058 masks.py INFO: start masked_card_num 3182665825206884
+2024-06-06 17:59:25,058 masks.py INFO: mask 3182 66** **** 6884
+2024-06-06 17:59:25,060 masks.py INFO: start masked_card_num 5313948287096164
+2024-06-06 17:59:25,060 masks.py INFO: mask 5313 94** **** 6164
+2024-06-06 17:59:25,060 masks.py INFO: start masked_card_num 0329774489991288
+2024-06-06 17:59:25,060 masks.py INFO: mask 0329 77** **** 1288

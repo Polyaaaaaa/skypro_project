@@ -4,6 +4,7 @@ from src.masks import masked_account_num, masked_card_num
 def mask_elements(element: str) -> str | None:
     """Функция, маскирующая любой элемент,
     как номер карты, так и номер счёта"""
+
     if element[0] == "С":
         for i in range(len(element)):
             if element[i].isalpha():
