@@ -16,7 +16,7 @@ def main():
     Связующая функция
     """
 
-    global transactions, sorted_list_by_date, found_word
+    global transactions, sorted_list_by_date, found_word, transactions_
     print("Привет! Добро пожаловать в программу работы с банковскими транзакициями.")
     print(
         """Выберите необходимый пункт меню:
@@ -31,7 +31,7 @@ def main():
         transactions = get_list_of_transactions(os.path.join("data", "operations.json"))
         print("Для обработки выбран json файл.")
     elif user_input_1 == 2:
-        transactions = get_csv_file_as_DataFrame(os.path.join("data", "transactions.csv"))
+        transactions = list(get_csv_file_as_DataFrame(os.path.join("data", "transactions.csv")))
         print("Для обработки выбран csv файл.")
     elif user_input_1 == 3:
         transactions = get_xlsx_file_as_DataFrame(os.path.join("data", "transactions_excel.xlsx"))
@@ -72,22 +72,30 @@ def main():
 
     print("Выводить только рублевые тразакции? Да/Нет")
     user_input_6 = input()
-    transact_list = []
     if user_input_6 == "Да":
+        transactions_ = []
         for transaction in sorted_list_by_date:
-            transactions_ = get_sum_transactions(transaction)
-            transact_list.append(transactions_)
+            if "currency_code" in transaction and transaction.get("currency_code") == "RUB":
+                transactions_.append(transaction)
+            elif transaction["operationAmount"]["currency"]["code"] == "RUB":
+                transactions_.append(transaction)
+
+        sorted_list_by_date = transactions_
     else:
-        for transaction in sorted_list_by_date:
-            transactions_ = get_sum_transactions(transaction)
-            transact_list.append(transactions_)
+        sorted_list_by_date = filtered_list
+
     print("Отфильтровать список транзакций по определенному слову в описании? Да/Нет")
     user_input_7 = input()
-    if user_input_7 == "Да" and user_input_6 == "Да":
+
+    if user_input_7 == "Да":
         print("Введите слово/выражение по которому хотите найти отфильтровать транзакции")
         search_bar = input()
         found_word = find_string(sorted_list_by_date, search_bar)
         print("Распечатываю итоговый список транзакций...")
+    else:
+        print("Распечатываю итоговый список транзакций...")
+
+
     if len(sorted_list_by_date) == 0:
         print("Не найдено ни одной транзакции подходящей под ваши условия фильтрации")
     else:
@@ -102,7 +110,7 @@ def main():
                 print(
                     f"""{get_date(date)} {description}
             {mask_elements(from_)} -> {mask_elements(to)}
-            Сумма: {get_sum_transactions(element)}
+            Сумма: {element["operationAmount"]["amount"]} руб.
             """
                 )
         else:
@@ -115,7 +123,7 @@ def main():
                 print(
                     f"""{get_date(date)} {description}
 {mask_elements(from_)} -> {mask_elements(to)}
-Сумма: {get_sum_transactions(element)}
+Сумма: {transactions_}
 """
                 )
     return "That's all"

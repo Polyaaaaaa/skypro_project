@@ -14,3 +14,4 @@ def get_sorted_list(list_of_dicts: list, order: bool = False) -> list:
     """функция, сортирующая список по дате"""
     list_of_dicts.sort(key=lambda a: datetime.strptime(a.get("date"), "%Y-%m-%dT%H:%M:%S.%f"), reverse=order)
     return list_of_dicts
+
