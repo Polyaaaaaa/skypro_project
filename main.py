@@ -2,10 +2,8 @@ from src.processing import get_new_list, get_sorted_list
 from src.utils import (
     find_string,
     get_csv_file_as_DataFrame,
-    get_dict,
     get_list_of_transactions,
-    get_sum_transactions,
-    get_xlsx_file_as_DataFrame,
+    get_xlsx_file_as_DataFrame
 )
 from src.widget import get_date, mask_elements
 import os
@@ -106,10 +104,10 @@ def main():
                 description = element["description"]
                 from_ = str(element.get("from", "None card/account"))
                 to = str(element["to"])
-                print(
-                    f"""{get_date(date)} {description}
+                summ = element["operationAmount"]["amount"]
+                print(f"""{get_date(date)} {description}
             {mask_elements(from_)} -> {mask_elements(to)}
-            Сумма: {transactions_} руб.
+            Сумма: {summ} руб.
             """
                 )
         else:
@@ -119,10 +117,11 @@ def main():
                 description = element["description"]
                 from_ = str(element.get("from", "None card/account"))
                 to = str(element["to"])
+                summ = element["operationAmount"]["amount"]
                 print(
                     f"""{get_date(date)} {description}
 {mask_elements(from_)} -> {mask_elements(to)}
-Сумма: {transactions_}
+Сумма: {summ}
 """
                 )
     return "That's all"
